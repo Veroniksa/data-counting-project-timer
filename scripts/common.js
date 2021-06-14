@@ -12,3 +12,4 @@ export function renderDates(result) {
         <span>Giorni: ${result.days}</span>
         `;
 }
+

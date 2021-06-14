@@ -1,6 +1,4 @@
-import {
-    DateTime
-} from "./linux.js";
+import {DateTime} from "./linux.js";
 
 export function diffDates(data1, data2) {
     const iso1 = DateTime.fromISO(data1);
