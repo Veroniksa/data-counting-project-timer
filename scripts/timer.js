@@ -1,5 +1,6 @@
 
-import '../node_modules/howler/dist/howler.min.js';
+//import '../node_modules/howler/dist/howler.min.js';
+import {sound} from "./sound.js";
 
 //Timer
 const form = document.getElementById("form-timer");
@@ -47,14 +48,15 @@ form.addEventListener("change", (el) => {
         clearTimeout(t);
 
         // Setup the new Howl.
-        var sound = new Howl({
+        /*var sound = new Howl({
           src: ['../suono.mp3'],
           autoplay: true,
           volume: 0.5,
           onend: function () {
             console.log('Finished!');
           }
-        });
+        });*/
+        sound.play();
       }
     }, 1000);
 
